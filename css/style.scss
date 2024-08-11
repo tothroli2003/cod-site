@@ -1,0 +1,188 @@
+@import 'config';
+svg{
+    &.nav{
+        fill:white;
+        height:1em;
+        display:inline-block;
+        margin-right:10px;
+        margin-bottom:5px;
+    }
+    &.l{
+        fill:white;
+        height:1.2em;
+        display:inline-block;
+        margin-right:10px;
+        margin-bottom:5px;
+    }
+}
+nav{
+	background-color:$navigation;
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:100;
+    ul{
+        &.navigation{
+            list-style-type: none;
+            margin: 0; 
+            padding: 0;
+            overflow: hidden; 
+            float: right;
+        }
+        li{
+            transition: $valtozas;
+            margin:0 -3px;
+            display:inline-block;
+            &:hover{
+                background-color:$vzold!important;
+                
+            }	
+            a{
+                transition: $valtozas;
+                text-decoration:none;
+                color:white;
+                font-weight:500;
+                display:block;
+                padding:25px 35px;
+                &:hover{
+                    color:white;
+                }
+            }
+
+        }
+    }
+}
+.wrap{
+	background-color:$szold;
+}
+@mixin hatter($kep,$magassag,$hatter-pozicio){
+   position: relative;
+   background-position: $hatter-pozicio;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: 70px;
+   height:$magassag;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url($kep);
+ 
+}
+.kezdokep{
+	@include hatter("../img/hero.jpeg",300px,center);
+    &2{
+        @include hatter("../img/gunfight.jpeg",400px,50% 60%);
+    }
+    &3{
+        @include hatter("../img/WZ-Spotter.jpeg",300px,50% 45%);
+    }
+    &4{
+        @include hatter("../img/collect-intel.jpg",400px,50% 60%);
+    }
+    &5{
+        @include hatter("../img/radar.jpeg",300px,bottom);
+    }
+}
+.kezdoszoveg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+	line-height:1.5em;
+    h1{
+        text-transform:uppercase;
+        font-weight:900;
+    }
+}
+img{
+    &:not(#logo){
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        
+    }
+    &#logo{
+        height:74px;
+        margin-left:50px;
+    }
+}
+.dev-l{
+	list-style-type:none;
+    transition: $valtozas;
+    li a{
+        text-decoration:none;
+        font-size:1.2em;
+        color:white;
+    }
+    a:hover, svg:hover{
+        color:$vzold;
+        fill:$vzold;
+    }
+}
+a{
+    &.active{
+        background-color:$szold;
+    }
+    &.current{
+        color:white;
+    }
+    &.download{
+        margin-top:10px;
+        text-decoration:none;
+        border: 3px solid $szold;
+        padding: 10px 20%;
+        color:white;
+        border-radius:10px;
+        font-weight:900;
+        transition: $valtozas;
+        &:hover{
+            background-color:$vzold;
+            color:white
+            
+        }
+    }
+}
+footer{
+	background-color:$navigation;
+	width:100%;
+    ul{
+        float:left!important;
+        li{
+            display: inline-block; 
+            a{
+                text-decoration:none;
+                color:$vszurke;
+                font-weight:500;
+                display:block;
+                text-shadow: 2px 2px 2px grey;
+                padding:25px 25px;
+                transition: $valtozas;
+                &:hover{
+                    color:$vzold;
+                    text-shadow: 4px 4px 3px grey;
+
+                }
+            }
+    
+        }  
+    }
+    p {
+        width:100%;
+        float:right;
+        color: grey;
+        font-size:0.8em;
+        margin-top:1px;
+        margin-bottom:1em;  
+    }  
+}
+#min,#opt{
+    li{
+	    margin-top:5px;
+    }
+}
+@media screen and (max-width: 980px){
+	nav{position:relative;}
+	ul.navigation{float:none!important;}
+	nav, footer{ul li{width:100%;}}
+	.kezdokep,.kezdokep2,.kezdokep3{margin-top:0px;}
+	#logo{margin-left:calc(50% - 55px)!important;height:110px!important;}
+}

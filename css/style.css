@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.tc {
+  text-align: center;
+}
+
+.text {
+  margin-top: 2em;
+}
+
+.text2 {
+  margin-top: 1.5em;
+}
+
+.vc {
+  margin-top: 10%;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sarga {
+  border: 2px solid yellow;
+}
+
+.zold {
+  border: 2px solid green;
+}
+
+.kek {
+  border: 2px solid blue;
+}
+
+.piros {
+  border: 2px solid red;
+}
+
+svg.nav {
+  fill: white;
+  height: 1em;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+svg.l {
+  fill: white;
+  height: 1.2em;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+nav ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+nav ul li {
+  transition: 0.8s;
+  margin: 0 -3px;
+  display: inline-block;
+}
+nav ul li:hover {
+  background-color: #92C83E !important;
+}
+nav ul li a {
+  transition: 0.8s;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: block;
+  padding: 25px 35px;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+.wrap {
+  background-color: #3a511d;
+}
+
+.kezdokep {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/hero.jpeg");
+}
+.kezdokep2 {
+  position: relative;
+  background-position: 50% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/gunfight.jpeg");
+}
+.kezdokep3 {
+  position: relative;
+  background-position: 50% 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/WZ-Spotter.jpeg");
+}
+.kezdokep4 {
+  position: relative;
+  background-position: 50% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/collect-intel.jpg");
+}
+.kezdokep5 {
+  position: relative;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../img/radar.jpeg");
+}
+
+.kezdoszoveg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  line-height: 1.5em;
+}
+.kezdoszoveg h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+img:not(#logo) {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+img#logo {
+  height: 74px;
+  margin-left: 50px;
+}
+
+.dev-l {
+  list-style-type: none;
+  transition: 0.8s;
+}
+.dev-l li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+.dev-l a:hover, .dev-l svg:hover {
+  color: #92C83E;
+  fill: #92C83E;
+}
+
+a.active {
+  background-color: #3a511d;
+}
+a.current {
+  color: white;
+}
+a.download {
+  margin-top: 10px;
+  text-decoration: none;
+  border: 3px solid #3a511d;
+  padding: 10px 20%;
+  color: white;
+  border-radius: 10px;
+  font-weight: 900;
+  transition: 0.8s;
+}
+a.download:hover {
+  background-color: #92C83E;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+footer ul {
+  float: left !important;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #C7BFAA;
+  font-weight: 500;
+  display: block;
+  text-shadow: 2px 2px 2px grey;
+  padding: 25px 25px;
+  transition: 0.8s;
+}
+footer ul li a:hover {
+  color: #92C83E;
+  text-shadow: 4px 4px 3px grey;
+}
+footer p {
+  width: 100%;
+  float: right;
+  color: grey;
+  font-size: 0.8em;
+  margin-top: 1px;
+  margin-bottom: 1em;
+}
+
+#min li, #opt li {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    position: relative;
+  }
+  ul.navigation {
+    float: none !important;
+  }
+  nav ul li, footer ul li {
+    width: 100%;
+  }
+  .kezdokep, .kezdokep2, .kezdokep3 {
+    margin-top: 0px;
+  }
+  #logo {
+    margin-left: calc(50% - 55px) !important;
+    height: 110px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

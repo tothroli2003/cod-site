@@ -1,0 +1,40 @@
+$navigation:black;
+$vzold:#92C83E;
+$szold:#3a511d;
+$vszurke:#C7BFAA;
+$sszurke:#59594f;
+$valtozas: .8s;
+*{	
+	margin:0;
+	padding:0;
+	color:white;
+	box-sizing:border-box;
+    
+}
+body{
+	background-color:black;
+}
+.tc{
+	text-align:center;
+}
+.text{
+	margin-top:2em;
+	
+}
+.text2{
+	margin-top:1.5em;
+}
+.vc{
+	margin-top:10%;
+}
+.clearfix{
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+.sarga {border: 2px solid yellow;}
+.zold {border: 2px solid green;}
+.kek {border: 2px solid blue;}
+.piros {border: 2px solid red;}
