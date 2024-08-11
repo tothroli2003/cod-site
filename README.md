@@ -1,4 +1,4 @@
-Az oldalon szereplő információk ideje múltak!
+Az oldalon szereplő információk idejemúltak!
 
 The information provided by the site is outdated!
 
